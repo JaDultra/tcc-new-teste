@@ -210,7 +210,18 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    const masculine = document.querySelector('.masculine');
+    if (masculine) {
+        masculine.addEventListener('click', () => {
+            gtag('event', 'masculine', {
+                'event_category': 'interaction',
+                'event_label': 'masculine'
+            });
+        });
+    }
 
+
+    
     // Link do WhatsApp
     const whatsappLink = document.querySelector('.whatsapp-link');
     if (whatsappLink) {
